@@ -1,0 +1,117 @@
+﻿@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    a, a:visited, a:hover, a:active {
+        color: inherit;
+    }
+
+button {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    background-color: #fafafa;
+    color: #000;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica,Arial, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    min-width: 600px;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #f55b2d;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+img {
+    padding: 0 10px;
+}
+
+input {
+    background: #fff;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: center;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+    input:focus {
+        border: 1px solid #f55b2d;
+    }
+
+    input.short {
+        width: 40px;
+    }
+
+    input.long {
+        width: 500px;
+    }
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 40px 0;
+}
+
+    main section {
+        margin-bottom: 40px;
+    }
+
+p {
+    margin: 3px 0;
+}
+
+section {
+    padding-left: 45px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.answer {
+    font-weight: bold;
+}
+
+.one {
+    background: url("../Images/1.png") no-repeat;
+}
+
+.two {
+    background: url("../Images/2.png") no-repeat;
+}
+
+.three {
+    background: url("../Images/3.png") no-repeat;
+}

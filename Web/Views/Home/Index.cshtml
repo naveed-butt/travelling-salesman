@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>.Net/C# Challenge</title>
+
+    @Styles.Render("~/Styles/Index.css")
+
+    @Scripts.Render("~/Scripts/jquery.min.js")
+    @Scripts.Render("~/Scripts/Index.js")
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Travelling Salesman</h1>
+        </section>
+    </header>
+
+    <main>
+
+        <section>
+            <p>
+                <label>Graph:</label>
+            </p>
+            <p>
+                <input class="long" value="AB6, AE4, BA6, BC2, BD4, CB3, CD1, CE7, DB8, EB5, ED7" id="graph" type="text" />
+            </p>
+        </section>
+
+        <section class="one">
+            <p>
+                <label>Total Distance</label>
+            </p>
+            <p>
+                The total distance of the route <input id="distance-path" type="text" value="A-B-C-D" /> is <span class="answer" id="distance-answer">n/a</span>.
+            </p>
+            <p>
+                <button id="calculate-distance">Calculate</button>
+            </p>
+        </section>
+
+        <section class="two">
+            <p>
+                <label>Available Routes</label>
+            </p>
+            <p>
+                The available routes from town <input class="short" id="available-origin" maxlength="1" type="text" value="A" /> to town <input class="short" id="available-destiny" maxlength="1" type="text" value="C" /> with a maximum stops of <input class="short" id="available-maxstops" maxlength="1" type="number" value="3" /> are:
+                <ul class="answer" id="available-answer">
+                    <li>n/a</li>
+                </ul>
+            </p>
+            <p>
+                <button id="calculate-available">Calculate</button>
+            </p>
+        </section>
+
+        <section class="three">
+            <p>
+                <label>Shortest Route</label>
+            </p>
+            <p>
+                The shortest route (in terms of distance to travel) between town <input class="short" id="shortest-origin" value="A" type="text" /> and town <input class="short" id="shortest-destiny" value="C" type="text" /> is <span class="answer" id="shortest-answer">n/a</span>.
+            </p>
+            <p>
+                <button id="calculate-shortest">Calculate</button>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
